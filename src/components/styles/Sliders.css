@@ -1,0 +1,10 @@
+.sliderArrow::after,
+.sliderArrow::before
+{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.sliderArrow{
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
