@@ -93,7 +93,7 @@ const headerCSS = {
         transition: width 400ms cubic-bezier(.52,0,.27,2);
     `,
     MenuButton: styled.a`
-        text-decoration: none;
+        /* text-decoration: none; */
         position: relative;
         display: flex;
         width: fit-content;

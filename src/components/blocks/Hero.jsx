@@ -27,7 +27,8 @@ const Hero = forwardRef((props, ref) => {
                         <img src={House} alt="" />
                     </heroCSS.HeroImg>
                 </heroCSS.BlueLine>
-                <NavButton name="Почему именно мы?" href='#advantages'>
+                <NavButton href='#advantages'>
+                    Почему именно мы?
                 </NavButton>
             </heroCSS.Hero>
         </>

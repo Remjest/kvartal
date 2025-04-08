@@ -63,12 +63,6 @@ const contactsCSS = {
     `,
     Point: styled.div`
         display: flex;
-        &:first-child{
-            transition: all 0.2s ease-in-out;
-            &:active{
-                transform: scale(0.8);
-            }
-        }
         &:last-child{
             margin-bottom: 0px;
         }
@@ -77,10 +71,18 @@ const contactsCSS = {
             border-radius: 5px;
         }
         @media (min-width: 1024px) {
-            &:first-child{
+            &:first-child,
+            &:nth-child(2){
                 &:hover{
                     transform: scale(1.1);
                 }
+            }
+        }
+        &:first-child,
+        &:nth-child(2){
+            transition: all 0.2s ease-in-out;
+            &:active{
+                transform: scale(0.8);
             }
         }
     `,
@@ -117,14 +119,18 @@ const contactsCSS = {
         }
     `,
     PointDesk: styled.div`
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: column; */
         margin-top: 10px;
         color: rgb(0, 0, 0);
         font-size: 24px;
         font-weight: 275;
         line-height: 29px;
         letter-spacing: 0.04rem;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
         @media (max-width: 920px) {
             margin-top: 5px;
             font-size: 19px;
@@ -133,18 +139,6 @@ const contactsCSS = {
         @media (max-width: 340px) {
             font-size: 13px;
             line-height: 13.2px;
-        }
-    `,
-    PointDel: styled.div`
-        width: 1px;
-        height: 24px;
-        background-color: rgba(0, 0, 0, 0.7);
-        margin: 0 10px;
-        @media (max-width: 920px) {
-            height: 18px;
-        }
-        @media (max-width: 340px) {
-            height: 12px;
         }
     `,
 }

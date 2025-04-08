@@ -27,7 +27,7 @@ const mainCSS = {
         flex-direction: column;
         width: 100%;
         height: 100%;
-        max-width: 1440px;
+        max-width: 1400px;
         /* background-color: red; */
         *{
             /* background-color: green; */

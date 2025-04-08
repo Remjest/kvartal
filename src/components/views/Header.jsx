@@ -8,6 +8,7 @@ import { setShowBurger } from "../../redux-state/reduces/header";
 
 
 const NavButton = NavButtonHOC(headerCSS.MenuButton)
+const LogoButton = NavButtonHOC(headerCSS.LogoContainer)
 
 const Header = () => {
     const dispatch = useDispatch();
@@ -46,17 +47,17 @@ const Header = () => {
         <>
             <headerCSS.Header $pad={sectionPadding}>
                 <headerCSS.HeaderContainer>
-                    <headerCSS.LogoContainer>
+                    <LogoButton href='#hero'>
                         <img src={Logo} alt="" />
-                    </headerCSS.LogoContainer>
+                    </LogoButton>
                     {clientMode === 'desktop' &&
                         <headerCSS.MenuDesktopContainer>
-                            <NavButton name="главная" isActive={buttonState[0]} href='#hero'></NavButton>
-                            <NavButton name="преимущества" isActive={buttonState[1]} href='#advantages'></NavButton>
-                            <NavButton name="объекты" isActive={buttonState[2]} href='#catalog'></NavButton>
-                            <NavButton name="услуги" isActive={buttonState[3]} href='#services'></NavButton>
-                            <NavButton name="партнеры" isActive={buttonState[4]} href='#partners'></NavButton>
-                            <NavButton name="контакты" isActive={buttonState[5]} href='#contacts'></NavButton>
+                    <NavButton isActive={buttonState[0]} href='#hero'>главная</NavButton>
+                    <NavButton isActive={buttonState[1]} href='#advantages'>преимущества</NavButton>
+                    <NavButton isActive={buttonState[2]} href='#catalog'>объекты</NavButton>
+                    <NavButton isActive={buttonState[3]} href='#services'>услуги</NavButton>
+                    <NavButton isActive={buttonState[4]} href='#partners'>партнеры</NavButton>
+                    <NavButton isActive={buttonState[5]} href='#contacts'>контакты</NavButton>
                         </headerCSS.MenuDesktopContainer>}
                     {clientMode === 'mobile' && <Burger ref={burgerRef} />}
                 </headerCSS.HeaderContainer>
@@ -64,12 +65,12 @@ const Header = () => {
             {clientMode === 'mobile' &&
                 <headerCSS.MenuMobileContainer ref={menuRef} $transform={isShowBurger}>
                 <headerCSS.MenuMobileContainerWrap>
-                    <NavButton name="главная" isActive={buttonState[0]} href='#hero'></NavButton>
-                    <NavButton name="преимущества" isActive={buttonState[1]} href='#advantages'></NavButton>
-                    <NavButton name="объекты" isActive={buttonState[2]} href='#catalog'></NavButton>
-                    <NavButton name="услуги" isActive={buttonState[3]} href='#services'></NavButton>
-                    <NavButton name="партнеры" isActive={buttonState[4]} href='#partners'></NavButton>
-                    <NavButton name="контакты" isActive={buttonState[5]} href='#contacts'></NavButton>
+                    <NavButton isActive={buttonState[0]} href='#hero'>главная</NavButton>
+                    <NavButton isActive={buttonState[1]} href='#advantages'>преимущества</NavButton>
+                    <NavButton isActive={buttonState[2]} href='#catalog'>объекты</NavButton>
+                    <NavButton isActive={buttonState[3]} href='#services'>услуги</NavButton>
+                    <NavButton isActive={buttonState[4]} href='#partners'>партнеры</NavButton>
+                    <NavButton isActive={buttonState[5]} href='#contacts'>контакты</NavButton>
                 </headerCSS.MenuMobileContainerWrap>
                 </headerCSS.MenuMobileContainer>}
         </>

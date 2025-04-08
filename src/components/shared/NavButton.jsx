@@ -3,7 +3,7 @@ import React from "react";
 const NavButtonHOC = (ButtonComponent) => {
     
     return (props) => {
-
+        const {children} = props;
         const name = props.name;
         const isActive = props.isActive;
         const href = props.href;
@@ -27,7 +27,7 @@ const NavButtonHOC = (ButtonComponent) => {
         }
         return (
             <ButtonComponent $focus={isActive} onClick={smoothScroll} href={href}>
-                    {name}
+                    {children}
             </ButtonComponent>
         )
         

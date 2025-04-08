@@ -22,7 +22,7 @@ const footerCSS = {
         height: 100%;
         max-width: 1440px;
     `,
-    Point: styled.div`
+    Point: styled.a`
         display: flex;
         padding: 0 7px;
         min-height: 34px;
@@ -30,6 +30,23 @@ const footerCSS = {
         justify-content: center;
         align-items: center;
         border-right: 1px solid rgb(243, 244, 241);
+        cursor: pointer;
+        img{
+            transition: all 0.2s ease-in-out;
+        }
+        @media (min-width: 1024px) {
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+                
+            }
+        }
+        &:active{
+            img{
+                transform: scale(0.8);
+            }
+        }
         &:last-child{
             width: 12.5%;
             border-right: none;
@@ -47,6 +64,7 @@ const footerCSS = {
         display: flex;
         justify-content: center;
         align-items: center;
+
         @media (max-width: 1120px) {
             img{
                 height: 50px;
@@ -58,16 +76,20 @@ const footerCSS = {
             }
         }
     `,
-    PointInfo: styled.span`
+    PointInfo: styled.div`
         display: block;
         color: rgb(255, 255, 255);
         font-size: clamp(0.6rem, 1.1vw, 1rem);
         margin-left: clamp(0.2rem, 2.25vw, 3rem);
         font-weight: 250;
         line-height: 140.86%;
-        letter-spacing: 4%;
+        letter-spacing: 0.04rem;
         text-align: left;
         white-space: nowrap;
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
         @media (max-width: 1120px) {
             margin-left: 0px;
         }

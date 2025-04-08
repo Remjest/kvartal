@@ -60,6 +60,21 @@ const Contacts = forwardRef((props, ref) => {
                                     </contactsCSS.Pointinfo>
                                 </contactsCSS.Point>
                             </a>
+                            <a href="https://yandex.ru/maps/-/CHVcm0le" target="_blank">
+                                <contactsCSS.Point>
+                                    <contactsCSS.PointImg>
+                                        <img src={Geo} alt="" />
+                                    </contactsCSS.PointImg>
+                                    <contactsCSS.Pointinfo>
+                                        <contactsCSS.PointTitle>
+                                            <span>Адрес</span>
+                                        </contactsCSS.PointTitle>
+                                        <contactsCSS.PointDesk>
+                                            улица Грибоедова, 3, Дзержинск, Нижегородская область
+                                        </contactsCSS.PointDesk>
+                                    </contactsCSS.Pointinfo>
+                                </contactsCSS.Point>
+                            </a>
                             <contactsCSS.Point>
                                 <contactsCSS.PointImg>
                                     <img src={Clock} alt="" />
@@ -69,20 +84,7 @@ const Contacts = forwardRef((props, ref) => {
                                         <span>Время работы</span>
                                     </contactsCSS.PointTitle>
                                     <contactsCSS.PointDesk>
-                                        Пн-пт <contactsCSS.PointDel></contactsCSS.PointDel> 10:00-18:00
-                                    </contactsCSS.PointDesk>
-                                </contactsCSS.Pointinfo>
-                            </contactsCSS.Point>
-                            <contactsCSS.Point>
-                                <contactsCSS.PointImg>
-                                    <img src={Geo} alt="" />
-                                </contactsCSS.PointImg>
-                                <contactsCSS.Pointinfo>
-                                    <contactsCSS.PointTitle>
-                                        <span>Адрес</span>
-                                    </contactsCSS.PointTitle>
-                                    <contactsCSS.PointDesk>
-                                        улица Грибоедова, 3, Дзержинск, Нижегородская область
+                                        Пн-пт | 10:00-18:00
                                     </contactsCSS.PointDesk>
                                 </contactsCSS.Pointinfo>
                             </contactsCSS.Point>
@@ -95,8 +97,7 @@ const Contacts = forwardRef((props, ref) => {
                                         <span>Телефон</span>
                                     </contactsCSS.PointTitle>
                                     <contactsCSS.PointDesk>
-                                        +7 (905) 865-63-41 <br />
-                                        +7 (905) 667-67-75
+                                        <a href="tel:89058656341">+7 (905) 865-63-41</a><br /><a href="tel:89056676775">+7 (905) 667-67-75</a>
                                     </contactsCSS.PointDesk>
                                 </contactsCSS.Pointinfo>
                             </contactsCSS.Point>

@@ -6,7 +6,6 @@ const advantagesCSS = {
     AdvantagesContainer: styled(mainCSS.NewSectionContainer)``,
     Title: styled(mainCSS.Title)``,
     BlocksContainer: styled.div`
-        /* background-color: #fff; */
         display: grid;
         margin: 70px 98px;
         grid-template-columns: repeat(3, 1fr);
