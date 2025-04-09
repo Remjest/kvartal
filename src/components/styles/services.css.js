@@ -5,10 +5,6 @@ import Background from "../../img/BlockServices/background.png"
 const servicesCSS = {
     Services: styled(mainCSS.NewSection)`
         background: url(${Background}) bottom center no-repeat ;
-        /* height: 1612px; */
-        *{
-            /* display: none; */
-        }
         @media (min-width: 1440px) {
             background: url(${Background}) bottom center/100% no-repeat ;
         }
@@ -18,7 +14,6 @@ const servicesCSS = {
     `,
     ServicesContainer: styled(mainCSS.NewSectionContainer)`
         overflow: hidden;
-        /* background-color: #fff; */
     `,
     Title: styled(mainCSS.Title)``,
     SliderContainer: styled(mainCSS.Slider)`

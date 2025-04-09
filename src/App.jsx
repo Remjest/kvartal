@@ -21,14 +21,12 @@ function App() {
     if (window.innerWidth <= 992) newClientMode = 'mobile';
     if (clientMode !== newClientMode) {
       dispatch(setClientMode(newClientMode));
-      // console.log(newClientMode);
     }
     if (window.innerWidth <= 720) newSectionPadding = '20px';
     else if (window.innerWidth <= 1120) newSectionPadding = '50px';
     else newSectionPadding = '100px';
     if (sectionPadding !== newSectionPadding) {
       dispatch(setSectionPadding(newSectionPadding));
-      console.log(newSectionPadding);
     }
   };
 

@@ -119,8 +119,6 @@ const contactsCSS = {
         }
     `,
     PointDesk: styled.div`
-        /* display: flex;
-        flex-direction: column; */
         margin-top: 10px;
         color: rgb(0, 0, 0);
         font-size: 24px;

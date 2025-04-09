@@ -78,8 +78,6 @@ const advantagesCSS = {
         }
     `,
     BlockDesk: styled.div`
-        /* background-color: #fff; */
-        /* margin-top: auto; */
         color: rgb(26, 26, 26);
         font-size: 15.43px;
         font-weight: 300;

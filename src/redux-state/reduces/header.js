@@ -17,7 +17,6 @@ export const headerReducer = createSlice({
                 return index === action.payload ? 1 : 0;
             });
             state.activeButton = newActiveButton;
-            console.log(state.activeButton);
         }
     }
 })

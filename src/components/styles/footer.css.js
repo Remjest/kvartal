@@ -8,7 +8,6 @@ const footerCSS = {
         width: 100%;
         height: 136px;
         margin-top: auto;
-        /* flex-shrink: 0; */
         background: rgb(40, 45, 48);
         padding: 18px ${props => (props.$pad)};
         @media (max-width: 575px) {

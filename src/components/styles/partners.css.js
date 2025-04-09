@@ -10,7 +10,6 @@ const partnersCSS = {
         overflow: visible;
         @media (max-width: 768px) {
             height: calc(252px + 3rem);
-            /* width: 252px; */
             padding: 0;
         }
     `,

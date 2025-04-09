@@ -22,9 +22,6 @@ const heroCSS = {
         position: absolute;
         top: 10px;
         left: 0;
-        /* width: 10px;
-        height: 10px;
-        background-color: red; */
     `,
     BlueLine: styled.div`
         position: relative;

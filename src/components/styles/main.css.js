@@ -3,9 +3,7 @@ import styled from "styled-components";
 const mainCSS = {
     Body: styled.section`
         display: flex;
-        /* overflow: hidden; */
         flex-direction: column;
-        /* flex-grow: 1; */
         width: 100%;
         padding-top: 86px;
     `,
