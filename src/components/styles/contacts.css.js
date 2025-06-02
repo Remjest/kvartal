@@ -27,8 +27,11 @@ const contactsCSS = {
         border-radius: 19px;
         overflow: hidden;
         @media (max-width: 1340px) {
-            width: 95%;
+            width: 100%;
             aspect-ratio: 2 / 1;
+        }
+        @media (max-width: 425px) {
+            aspect-ratio: 1 / 1;
         }
     `,
     Info: styled.div`

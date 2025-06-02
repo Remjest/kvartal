@@ -29,7 +29,7 @@ const Contacts = forwardRef((props, ref) => {
                                 modules={["control.ZoomControl"]}
                                 options={{
                                     yandexMapDisablePoiInteractivity: true,
-                                    // suppressMapOpenBlock: true,
+                                    suppressMapOpenBlock: true,
                                     scrollZoom: false,
                                 }}
                             >
@@ -45,7 +45,7 @@ const Contacts = forwardRef((props, ref) => {
                     <contactsCSS.Info>
                         <contactsCSS.Title ref={ref} id="contacts">Контакты</contactsCSS.Title>
                         <contactsCSS.PointContainer>
-                            <a href="https://m.vk.com/ankvartaldzr" target="_blank">
+                            <a href="https://m.vk.com/ankvartaldzr" target="_blank" rel="noopener noreferrer">
                                 <contactsCSS.Point>
                                     <contactsCSS.PointImg>
                                         <img src={Vk} alt="" />
@@ -55,12 +55,12 @@ const Contacts = forwardRef((props, ref) => {
                                             <span>Наше сообщество ВК</span>
                                         </contactsCSS.PointTitle>
                                         <contactsCSS.PointDesk>
-                                            {'(кликабельно)'}
+                                            {'( нажмите, чтобы перейти )'}
                                         </contactsCSS.PointDesk>
                                     </contactsCSS.Pointinfo>
                                 </contactsCSS.Point>
                             </a>
-                            <a href="https://yandex.ru/maps/-/CHVcm0le" target="_blank">
+                            <a href="https://yandex.ru/maps/-/CHVcm0le" target="_blank" rel="noopener noreferrer">
                                 <contactsCSS.Point>
                                     <contactsCSS.PointImg>
                                         <img src={Geo} alt="" />

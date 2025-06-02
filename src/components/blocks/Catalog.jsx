@@ -40,7 +40,7 @@ const Catalog = forwardRef((props,ref) => {
                             <span>Наши профессиональные риэлторы окажут полное сопровождение на всех этапах сделки.</span>
                         </catalogCSS.DescriptionBottom>
                     </catalogCSS.Description>
-                    <catalogCSS.ObjectButton href="https://m.vk.com/market-207476214" target="_blank">Ознакомиться с каталогом</catalogCSS.ObjectButton>
+                    <catalogCSS.ObjectButton href="https://m.vk.com/market-207476214" target="_blank" rel="noopener noreferrer">Ознакомиться с каталогом</catalogCSS.ObjectButton>
                     <catalogCSS.Conclusion>Лучшие <span style={{ fontWeight: '250', }}>квартиры по</span> лучшим <span style={{ fontWeight: '250', }}>ценам!</span></catalogCSS.Conclusion>
                 </catalogCSS.CatalogContainer>
             </catalogCSS.Catalog>

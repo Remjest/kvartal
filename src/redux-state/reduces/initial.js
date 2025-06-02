@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     init: false,
-    clientMode: 'desktop',
-    sectionPadding: '100px',
+    clientMode: 'mobile',
+    sectionPadding: '20px',
 }
 
 export const initialReducer = createSlice({

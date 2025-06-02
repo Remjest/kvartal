@@ -63,12 +63,12 @@ const Partners = forwardRef((props, ref) => {
                     </partnersCSS.SliderContainer>
                     <partnersCSS.Subtitle>Мы являемся частью:</partnersCSS.Subtitle>
                     <partnersCSS.Guilds>
-                        <a href="https://nngsr.ru/sostav/firm_5406/" target="_blank">
+                        <a href="https://nngsr.ru/sostav/firm_5406/" target="_blank" rel="noopener noreferrer">
                             <partnersCSS.Guild>
                                 <img src={NGSR} alt="" />
                             </partnersCSS.Guild>
                         </a>
-                        <a href="https://reestr.rgr.ru/agentstvo-agentstvo-nedvizhimosti-kvartal-19043/" target="_blank">
+                        <a href="https://reestr.rgr.ru/agentstvo-agentstvo-nedvizhimosti-kvartal-19043/" target="_blank" rel="noopener noreferrer">
                             <partnersCSS.Guild>
                                 <img src={RGR} alt="" />
                             </partnersCSS.Guild>
