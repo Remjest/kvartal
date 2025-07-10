@@ -72,16 +72,9 @@ const heroCSS = {
         padding: 0 10px;
         width: 585px;
         user-select: none;
-        @media (max-width: 1165px) {
-            /* height: 110px; */
-        }
         @media (max-width: 665px) {
             width: auto;
             align-items: center;
-        }
-        @media (max-width: 470px) {
-        }
-        @media (max-width: 350px) {
         }
     `,
     H1: styled.span`
@@ -96,8 +89,6 @@ const heroCSS = {
         text-transform: uppercase;
         text-shadow: 0px 3.8px 3.8px rgba(0, 0, 0, 0.18);
         left: 0px;
-        opacity: 1;
-        animation: H1Animation 1s ease-out 1s both;
         @media (max-width: 1165px) {
             font-size: 59px;
             line-height: 59px;
@@ -108,14 +99,6 @@ const heroCSS = {
             letter-spacing: 4px;
         }
         @media (max-width: 425px) {
-        }
-        @keyframes H1Animation {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
     `,
     SubText: styled.span`
@@ -131,7 +114,6 @@ const heroCSS = {
         letter-spacing: 3px;
         text-align: left;
         text-shadow: 0px 3.8px 3.8px rgba(0, 0, 0, 0.18);
-        animation: SubTextAnimation 0.6s ease-out 1.4s both;
         @media (max-width: 1300px) {
             width: 78%;
             flex-direction: column;
@@ -146,14 +128,6 @@ const heroCSS = {
             text-align: center;
             font-size: 10.47px;
             line-height: 10.5px;
-        }
-        @keyframes SubTextAnimation {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
     `,
     HeroImg: styled.div`
