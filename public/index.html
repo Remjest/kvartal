@@ -1,161 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Агентство недвижимости в Дзержинске и Нижнем Новогороде" />
+    <title>Квартал</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="canonical" href="https://nnkvart.ru/">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Агентство недвижимости в Дзержинске и Нижнем Новогороде" />
-  <title>Квартал</title>
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="canonical" href="https://nnkvart.ru/">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Квартал - Агентство недвижимости" />
+    <meta property="og:description"
+      content="Профессиональные услуги по покупке и продаже недвижимости в Дзержинске и Нижнем Новгороде." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ru_RU" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Квартал - Агентство недвижимости" />
-  <meta property="og:description"
-    content="Профессиональные услуги по покупке и продаже недвижимости в Дзержинске и Нижнем Новгороде." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="ru_RU" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Квартал - Агентство недвижимости" />
+    <meta name="twitter:description"
+      content="Профессиональные услуги по покупке и продаже недвижимости в Дзержинске и Нижнем Новгороде." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
 
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Квартал - Агентство недвижимости" />
-  <meta name="twitter:description"
-    content="Профессиональные услуги по покупке и продаже недвижимости в Дзержинске и Нижнем Новгороде." />
-  <meta name="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <!-- WhatsApp and Viber Meta Tags -->
+    <meta property="whatsapp:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta property="viber:image" content="%PUBLIC_URL%/og-image.jpg" />
 
-  <!-- WhatsApp and Viber Meta Tags -->
-  <meta property="whatsapp:image" content="%PUBLIC_URL%/og-image.jpg" />
-  <meta property="viber:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <!-- Favicon and Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5" />
 
-  <!-- Favicon and Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
-  <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5" />
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-family: 'Montserrat', sans-serif;
+      }
 
-  <!-- Preconnect Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      border: 0;
-      font-family: 'Montserrat', sans-serif;
-    }
+      *,
+      *:before,
+      *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
 
-    *,
-    *:before,
-    *:after {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
+      :focus,
+      :active {
+        outline: none;
+      }
 
-    :focus,
-    :active {
-      outline: none;
-    }
+      a:focus,
+      a:active {
+        outline: none;
+      }
 
-    a:focus,
-    a:active {
-      outline: none;
-    }
+      nav,
+      footer,
+      header,
+      aside {
+        display: block;
+      }
 
-    nav,
-    footer,
-    header,
-    aside {
-      display: block;
-    }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        font-size: 100%;
+        line-height: 1;
+        font-size: 14px;
+        -ms-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        background: rgb(243, 244, 241);
+      }
 
-    html,
-    body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      font-size: 100%;
-      line-height: 1;
-      font-size: 14px;
-      -ms-text-size-adjust: 100%;
-      -moz-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      background: rgb(243, 244, 241);
-    }
+      body::-webkit-scrollbar {
+        width: 7px;
+        background-color: #f9f9fd;
+      }
 
-    body::-webkit-scrollbar {
-      width: 7px;
-      background-color: #f9f9fd;
-    }
+      body::-webkit-scrollbar-thumb {
+        background-color: rgba(4, 86, 162);
+      }
 
-    body::-webkit-scrollbar-thumb {
-      background-color: rgba(4, 86, 162);
-    }
+      input,
+      button,
+      textarea {
+        font-family: inherit;
+      }
 
-    input,
-    button,
-    textarea {
-      font-family: inherit;
-    }
+      input::-ms-clear {
+        display: none;
+      }
 
-    input::-ms-clear {
-      display: none;
-    }
+      button {
+        cursor: pointer;
+      }
 
-    button {
-      cursor: pointer;
-    }
+      button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+      }
 
-    button::-moz-focus-inner {
-      padding: 0;
-      border: 0;
-    }
+      a,
+      a:visited {
+        text-decoration: none;
+      }
 
-    a,
-    a:visited {
-      text-decoration: none;
-    }
+      a:hover {
+        text-decoration: none;
+      }
 
-    a:hover {
-      text-decoration: none;
-    }
+      ul li {
+        list-style: none;
+      }
 
-    ul li {
-      list-style: none;
-    }
+      img {
+        vertical-align: top;
+      }
 
-    img {
-      vertical-align: top;
-    }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: 400;
+      }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: inherit;
-      font-weight: 400;
-    }
+      #root {
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
 
-    #root {
-      min-height: 100vh;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
-</head>
-
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-</body>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 
 </html>
