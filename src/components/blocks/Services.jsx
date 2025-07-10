@@ -18,8 +18,11 @@ import Money from "../../img/BlockServices/money.png"
 
 const Services = forwardRef((props, ref) => {
     const sectionPadding = useSelector(state => (state.initial.sectionPadding));
-    const slidesRerView = useSelector(state => (state.initial.clientMode)) === 'mobile' ? '1' : "";
-    const _plugins = [new Arrow(), new AutoPlay(), new Fade()];
+    const _plugins = [
+        new Arrow(),
+        new AutoPlay(),
+        new Fade()
+    ];
 
     return (
         <>  
@@ -27,10 +30,14 @@ const Services = forwardRef((props, ref) => {
                 <servicesCSS.ServicesContainer>
                     <servicesCSS.Title ref={ref} id="services">Мы предлагаем услуги</servicesCSS.Title>
                         <servicesCSS.SliderContainer>
-                            <Flicking plugins={_plugins} circular={true}
+                            <Flicking
+                                plugins={_plugins}
+                                circular="true"
                                 align="center"
                                 duration='500'
-                                panelsPerView={slidesRerView}
+                                circularFallback="bound"
+                                moveType="strict"
+                                threshold="40"
                                 >
                             <servicesCSS.Slide>
                                 <servicesCSS.SliderTop>

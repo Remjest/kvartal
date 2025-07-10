@@ -17,11 +17,13 @@ const Hero = forwardRef((props, ref) => {
                 <heroCSS.HeroTop ref={ref}  id="hero"/>
                 <heroCSS.BlueLine $pad={sectionPadding}>
                     <heroCSS.BlueLineContainer>
-                        <heroCSS.InfoContainer>
+                        <heroCSS.infoContainer>
                             <img src={Logo} alt="" />
-                            <heroCSS.H1>квартал</heroCSS.H1>
-                            <heroCSS.SubText><span>Ваш комфорт — </span><span > наша работа</span></heroCSS.SubText>
-                        </heroCSS.InfoContainer>
+                            <heroCSS.H1Container>
+                                <heroCSS.H1>квартал</heroCSS.H1>
+                                <heroCSS.SubText>Агентство недвижимости в Нижнем Новгороде и Дзержинске</heroCSS.SubText>
+                            </heroCSS.H1Container>
+                        </heroCSS.infoContainer>
                     </heroCSS.BlueLineContainer>
                     <heroCSS.HeroImg>
                         <img src={House} alt="" />

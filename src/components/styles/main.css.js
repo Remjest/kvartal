@@ -31,7 +31,8 @@ const mainCSS = {
             /* background-color: green; */
         }    
     `,
-    Title: styled.div`
+    Title: styled.h2`
+        display: block;
         width: 100%;
         color: rgb(0, 0, 0);
         font-size: 46.37px;

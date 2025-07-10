@@ -2,7 +2,8 @@ import styled from "styled-components";
 import mainCSS from "./main.css";
 
 const partnersCSS = {
-    Partners: styled(mainCSS.NewSection)``,
+    Partners: styled(mainCSS.NewSection)`
+    `,
     PartnersContainer: styled(mainCSS.NewSectionContainer)``,
     Title: styled(mainCSS.Title)``,
     SliderContainer: styled(mainCSS.Slider)`
@@ -12,6 +13,9 @@ const partnersCSS = {
             height: calc(252px + 3rem);
             padding: 0;
         }
+        @media (max-width: 425px) {
+            width: calc(100% + 40px);
+        }
     `,
     Slide: styled.div`
         display: flex;
@@ -19,10 +23,9 @@ const partnersCSS = {
         justify-content: center;
         aspect-ratio: 1/1;
         height: 362px;
-        margin: 0 36px;
+        /* margin: 0 36px; */
         border-radius: 15px;
         font-size: 120px;
-        color: #fff;
         @media (max-width: 768px) {
             height: 252px;
         }

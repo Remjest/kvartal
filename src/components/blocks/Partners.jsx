@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { useSelector } from "react-redux"
 import partnersCSS from "../styles/partners.css";
 import Flicking, { ViewportSlot } from "@egjs/react-flicking";
-import { Arrow, AutoPlay, Fade } from "@egjs/flicking-plugins";
+import { Arrow, Perspective, Fade, AutoPlay } from "@egjs/flicking-plugins";
 import "@egjs/react-flicking/dist/flicking.css";
 import "@egjs/flicking-plugins/dist/arrow.css";
 import "../styles/Sliders.css"
@@ -16,8 +16,14 @@ import Five from "../../img/BlockPartners/5.png"
 
 const Partners = forwardRef((props, ref) => {
     const sectionPadding = useSelector(state => (state.initial.sectionPadding));
-    const slidesRerView = useSelector(state => (state.initial.clientMode)) === 'mobile' ? '1' : "";
-    const _plugins = [new Arrow(), new AutoPlay(), new Fade()];
+    const _plugins = [new Arrow(),
+        new AutoPlay(),
+        new Fade(),
+        new Perspective({ rotate: 0.3, scale: 0.2, perspective: 700 }),
+        new AutoPlay(
+            { duration: 2000, }
+        ),
+    ];
     
     return (
         <>
@@ -25,10 +31,14 @@ const Partners = forwardRef((props, ref) => {
                 <partnersCSS.PartnersContainer>
                     <partnersCSS.Title ref={ref} id="partners">Наши партнеры</partnersCSS.Title>
                     <partnersCSS.SliderContainer>
-                        <Flicking plugins={_plugins} circular={true}
+                        <Flicking
+                            plugins={_plugins}
                             align="center"
-                            duration='500'
-                            panelsPerView={slidesRerView}
+                            circularFallback="bound"
+                            duration="500"
+                            circular="true"
+                            moveType="strict"
+                            threshold="40"
                             >
                             <partnersCSS.Slide>
                                 <partnersCSS.SlideImg>

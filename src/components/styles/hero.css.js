@@ -36,33 +36,22 @@ const heroCSS = {
     `,
     BlueLineContainer: styled.div`
         position: relative;
+        display: flex;
+        align-items: center;
         width: 100%;
         max-width: 1440px;
     `,
-    InfoContainer: styled.div`
-        position: relative;
+    infoContainer: styled.div`
         display: flex;
         flex-direction: column;
-        left: 0;
-        padding: 0 10px;
-        bottom: -114px;
-        height: 140px;
-        width: 585px;
-        user-select: none;
-        z-index: 500;
+        z-index: 1;
         img{
-            display: none;
-            width: 83.4px;
-        }
-        @media (max-width: 1165px) {
-            height: 110px;
+                display: none;
+                width: 83.4px;
         }
         @media (max-width: 665px) {
+            width: 60%;
             align-items: center;
-            bottom: -51px;
-            left: 50px;
-            width: fit-content;
-            height: 50px;
             img {
                 display: block;
                 animation: LogoAnimation 1s ease-out 1s both;
@@ -76,23 +65,32 @@ const heroCSS = {
                 }
             }
         }
+    `,
+    H1Container: styled.h1`
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        width: 585px;
+        user-select: none;
+        @media (max-width: 1165px) {
+            /* height: 110px; */
+        }
+        @media (max-width: 665px) {
+            width: auto;
+            align-items: center;
+        }
         @media (max-width: 470px) {
-            bottom: -31px;
-            left: 0px;
         }
         @media (max-width: 350px) {
-            bottom: -31px;
-            left: -20px;
         }
     `,
     H1: styled.span`
-        position: relative;
         display: block;
-        height: 102px;
+        margin-bottom: 10px;
         color: rgb(255, 255, 255);
         font-size: 79.73px;
         font-weight: 350;
-        line-height: 97px;
+        line-height: 80px;
         letter-spacing: 9.5px;
         text-align: left;
         text-transform: uppercase;
@@ -121,11 +119,10 @@ const heroCSS = {
         }
     `,
     SubText: styled.span`
-        position: relative;
         display: flex;
         justify-content: end;
         width: 100%;
-        height: fit-content;
+        margin: 0 10px;
         color: rgb(255, 255, 255);
         font-style: italic;
         font-size: 30.33px;
@@ -135,13 +132,6 @@ const heroCSS = {
         text-align: left;
         text-shadow: 0px 3.8px 3.8px rgba(0, 0, 0, 0.18);
         animation: SubTextAnimation 0.6s ease-out 1.4s both;
-        span:first-child {
-            margin-right: 0.25em;
-        }
-        span:last-child {
-            display: flex;
-            justify-content: end;
-        }
         @media (max-width: 1300px) {
             width: 78%;
             flex-direction: column;
@@ -152,9 +142,10 @@ const heroCSS = {
             line-height: 23px;
         }
         @media (max-width: 665px) {
+            width: auto;
+            text-align: center;
             font-size: 10.47px;
             line-height: 10.5px;
-            width: 90%;
         }
         @keyframes SubTextAnimation {
             from {

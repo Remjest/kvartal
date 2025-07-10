@@ -12,15 +12,20 @@ const servicesCSS = {
             background: url(${Background}) -350px 80%  no-repeat;
         }
     `,
-    ServicesContainer: styled(mainCSS.NewSectionContainer)`
-        overflow: hidden;
-    `,
+    ServicesContainer: styled(mainCSS.NewSectionContainer)``,
     Title: styled(mainCSS.Title)``,
     SliderContainer: styled(mainCSS.Slider)`
         height: 362px;
         overflow: visible;
+        @media (max-width: 1024px) {
+            width: calc(100% + 100px);
+            padding: 0;
+        }
         @media (max-width: 768px) {
             height: 252px;
+        }
+        @media (max-width: 425px) {
+            width: calc(100% + 40px);
         }
     `,
     Slide: styled.div`
@@ -30,16 +35,18 @@ const servicesCSS = {
         padding: 42px 27px;
         aspect-ratio: 1/1;
         height: 362px;
-        margin: 0 36px;
+        margin: 0 30px;
         border-radius: 15px;
         backdrop-filter: blur(4.5px);
         -webkit-backdrop-filter: blur(4.5px);
         background: rgba(40, 45, 48, 0.55);
         font-size: 120px;
-        color: #fff;
         @media (max-width: 768px) {
             padding: 29px 19px;
             height: 252px;
+        }
+        @media (max-width: 425px) {
+            margin: 0 10px;
         }
     `,
     SliderTop: styled.div`
